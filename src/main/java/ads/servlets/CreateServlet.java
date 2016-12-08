@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by Moravia on 12/8/16.
  */
-@WebServlet(name = "CreateServlet")
+@WebServlet(name = "CreateServlet", urlPatterns = "/ads/create")
 public class CreateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -21,3 +21,5 @@ public class CreateServlet extends HttpServlet {
                 .forward(request, response);
     }
 }
+
+

@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by Moravia on 12/8/16.
  */
-@WebServlet(name = "DeleteServlet")
+@WebServlet(name = "DeleteServlet", urlPatterns = "/ads/delete")
 public class DeleteServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by Moravia on 12/8/16.
  */
-@WebServlet(name = "EditServlet")
+@WebServlet(name = "EditServlet", urlPatterns = "/ads/edit")
 public class EditServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
