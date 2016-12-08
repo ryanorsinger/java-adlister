@@ -21,11 +21,7 @@ public class LoginServlet extends HttpServlet {
 
         HttpSession session = request.getSession();
 
-        if(username.equals("username") && password.equals("password")) {
-            isValidLogin = true;
-        } else {
-            isValidLogin = false;
-        }
+        isValidLogin = username.equals("username") && password.equals("password");
 
         if(isValidLogin) {
             sessionMessage = "User logged in successfully";

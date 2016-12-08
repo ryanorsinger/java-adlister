@@ -13,7 +13,10 @@ import java.io.IOException;
 @WebServlet(name = "CreateServlet", urlPatterns = "/ads/create")
 public class CreateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        // validate the inputs from the form
+        // create a new Ad object
+        // create an AdsDAO object
+        // call save method on AdsDAO passing it the given Ad object
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
