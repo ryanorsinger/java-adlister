@@ -4,6 +4,7 @@ package ads;
  * Created by Moravia on 12/7/16.
  */
 public class Ad {
+    int id;
     String title;
     String body;
 
@@ -26,5 +27,9 @@ public class Ad {
 
     public void setBody(String body) {
         this.body = body;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
