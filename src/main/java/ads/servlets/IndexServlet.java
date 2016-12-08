@@ -10,13 +10,17 @@ import java.io.IOException;
 /**
  * Created by Moravia on 12/8/16.
  */
-@WebServlet(name = "IndexServlet", urlPatterns = {"/ads"})
+@WebServlet(name = "IndexServlet", urlPatterns = "/ads")
 public class IndexServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        // request.setAttribute("ads", AdsDao.all());
+
+        // Return the /ads/index.jsp view
         request.getRequestDispatcher("/WEB-INF/ads/index.jsp")
                 .forward(request, response);
     }

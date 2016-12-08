@@ -10,16 +10,13 @@ import java.io.IOException;
 /**
  * Created by Moravia on 12/8/16.
  */
-@WebServlet(name = "EditServlet")
-public class EditServlet extends HttpServlet {
+@WebServlet(name = "DeleteServlet")
+public class DeleteServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        // Send user to the edit page
-        request.getRequestDispatcher("/WEB-INF/ads/edit.jsp")
-                .forward(request, response);
     }
 }
