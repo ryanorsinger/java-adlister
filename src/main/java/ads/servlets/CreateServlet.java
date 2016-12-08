@@ -37,9 +37,11 @@ public class CreateServlet extends HttpServlet {
             // return to view
             response.sendRedirect("/ads");
 
-
         } catch (SQLException e) {
             e.printStackTrace();
+
+            // write a session message
+            // return to a different view
         }
 
     }

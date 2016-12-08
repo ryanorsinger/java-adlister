@@ -15,7 +15,7 @@
 
     <h1>Create a new ads.Ad!</h1>
 
-    <form action="${param.action}" method="post">
+    <form action="/ads/create" method="post">
 
         <input type="hidden" name="id" value="${ad.id}">
 
@@ -25,7 +25,7 @@
         </div>
         <div class="form-group">
             <label for="description">Description</label>
-            <input id="description" name="description" class="form-control" type="text" value="${ad.description}">
+            <input id="description" name="body" class="form-control" type="text" value="${ad.description}">
         </div>
 
         <input class="btn btn-primary btn-block" type="submit">

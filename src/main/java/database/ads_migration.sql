@@ -1,0 +1,8 @@
+use adlister_db;
+
+CREATE TABLE ads (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  title VARCHAR(256) NOT NULL,
+  body  VARCHAR(10000) NOT NULL,
+  PRIMARY KEY (id)
+);
