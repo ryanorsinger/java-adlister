@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by Moravia on 12/5/16.
+ * Created by Moravia on 12/8/16.
  */
-@WebServlet(name = "HelloServlet", urlPatterns = {"/ads"})
-public class HelloServlet extends HttpServlet {
+@WebServlet(name = "IndexServlet", urlPatterns = {"/ads"})
+public class IndexServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/ads.jsp")
+        request.getRequestDispatcher("/WEB-INF/ads/index.jsp")
                 .forward(request, response);
     }
 }
